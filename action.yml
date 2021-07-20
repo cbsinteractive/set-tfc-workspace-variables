@@ -1,0 +1,23 @@
+name: Set TFC Workspace Variables
+description: Creates or updates a set of Terraform Cloud workspace variables
+inputs:
+  tfcToken:
+    description: A Terraform Cloud API token with access to manage workspaces
+    required: true
+  orgName:
+    description: The name of the Terraform Cloud organization in which to create the workspace
+    required: true
+  workspaceName:
+    description: The name of the Terraform Cloud workspace
+    required: true
+  workspaceVariables:
+    descriptions: A JSON array of variable definitions to create or update
+    required: true
+runs:
+  using: "docker"
+  image: "docker://frostedcarbon/set-tfc-workspace-variables:latest"
+  args:
+    - ${{ inputs.tfcToken }}
+    - ${{ inputs.orgName }}
+    - ${{ inputs.workspaceName }}
+    - ${{ inputs.workspaceVariables }}

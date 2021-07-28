@@ -26,9 +26,7 @@ This Action has no outputs.
 
 ## Usage
 
-Example:
-
-This demonstrates calling the action using a number of [encrypted secrets][].
+This demonstrates calling the action using a number of [encrypted secrets][]:
 
 ```yaml
 uses: cbsinteractive/set-tfc-workspace-variables@v1

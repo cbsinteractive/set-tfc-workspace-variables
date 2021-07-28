@@ -28,12 +28,14 @@ This Action has no outputs.
 
 Example:
 
+This demonstrates calling the action using a number of [encrypted secrets][].
+
 ```yaml
 uses: cbsinteractive/set-tfc-workspace-variables@v1
 with:
   tfcToken: ${{ secrets.tfc_token }}
   orgName: ${{ secrets.tfc_organization }}
-  workspaceName: ${{ needs.preflight.outputs.workspace-name }}
+  workspaceName: my-tfc-workspace
   workspaceVariables: >
     [
       {
@@ -60,3 +62,5 @@ with:
       }
     ]
 ```
+
+[encrypted secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets

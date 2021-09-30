@@ -1,5 +1,7 @@
 # Set TFC Workspace Variables
 
+This project is not longer maintained. Actively maintained alternatives include [cbsinteractive/create-tfc-workspace-variable-action][] and [cbsinteractive/update-tfc-workspace-variable-value-action][].
+
 A GitHub Action to create or update a set of Terraform Cloud workspace variables.
 
 ## Inputs
@@ -61,4 +63,6 @@ with:
     ]
 ```
 
+[cbsinteractive/create-tfc-workspace-variable-action]: https://github.com/cbsinteractive/create-tfc-workspace-variable-action
+[cbsinteractive/update-tfc-workspace-variable-value-action]: https://github.com/cbsinteractive/update-tfc-workspace-variable-value-action
 [encrypted secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
